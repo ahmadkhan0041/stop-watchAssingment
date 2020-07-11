@@ -1,0 +1,131 @@
+                    * {
+                        margin: 0px;
+                        padding: 0px;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    /* body styling */
+                    
+                    body {
+                        background-image: linear-gradient(to top right, red, blue);
+                        min-height: 739px;
+                        text-align: center;
+                    }
+                    /* entire container stylingg */
+                    
+                    .container {
+                        background-color: rgba(100, 183, 20, 0.567);
+                        border: 2px solid rgb(114, 98, 98);
+                        margin: 20px 70px 20px 70px;
+                        border-radius: 10px;
+                        width: 50%;
+                        margin: auto;
+                        padding: 30px 0px 30px 0px;
+                        margin-top: 50px;
+                    }
+                    
+                    .container:hover {
+                        /* background-color: #000428 → #004e92; */
+                        box-shadow: 8px 22px 20px rgba(149, 272, 12, 0.19), 0 15px 33px rgba(0, 7, 10, 0.23);
+                        background-color: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%)
+                    }
+                    /* Stop watch Heading styling */
+                    
+                    .heading {
+                        font-size: 50px;
+                        color: rgba(228, 209, 209, 0.486);
+                        font-weight: bold;
+                    }
+                    /* Minutes Seconds MiliSecond Class */
+                    
+                    .same {
+                        display: inline-block;
+                        /* background-color: rgba(158, 75, 75, 0.61); */
+                        font-size: 50px;
+                        color: rgb(207, 191, 191);
+                        margin: 10px;
+                        background-color: teal;
+                        width: 134px;
+                        border-radius: 40px;
+                    }
+                    
+                    .btnStart {
+                        font-size: 27px;
+                        background-color: rgba(16, 255, 16, 0.534);
+                        border: 1px dotted rgb(160, 230, 55);
+                        width: 100px;
+                        margin: 4px;
+                        color: #fff;
+                        border-radius: 20px;
+                        padding: 3px;
+                        transition: 2s;
+                    }
+                    
+                    .btnStop {
+                        font-size: 27px;
+                        background-color: rgba(194, 12, 6, 0.959);
+                        border: 1px dotted rgb(196, 47, 10);
+                        width: 100px;
+                        margin: 4px;
+                        border-radius: 20px;
+                        color: #fff;
+                        padding: 3px;
+                        transition: 4s;
+                    }
+                    
+                    .btnReset {
+                        font-size: 27px;
+                        background-color: rgba(236, 240, 4, 0.959);
+                        border: 1px dotted rgb(196, 47, 10);
+                        width: 100px;
+                        margin: 4px;
+                        color: #fff;
+                        padding: 3px;
+                        border-radius: 20px;
+                        transition: 6s;
+                    }
+                    
+                    .btnStart:hover {
+                        background-color: linear-gradient(to top right, red, blue);
+                        background: linear-gradient(to bottom, #11cc49b0 30%, #9b195c 60%);
+                    }
+                    
+                    .btnStop:hover {
+                        background-color: linear-gradient(to top right, red, rgb(23, 23, 150));
+                        background: linear-gradient(to bottom, #e22200fd 30%, #9b195c 60%);
+                    }
+                    
+                    .btnReset:hover {
+                        background-color: linear-gradient(to top right, red, blue);
+                        background: linear-gradient(to bottom, #e4c514b0 30%, #9b195c 60%);
+                    }
+                    /* Starting Responsive code */
+                    
+                    @media screen and (max-width: 480px) {
+                        .container {
+                            width: 411px;
+                        }
+                        .heading {
+                            font-size: 34px;
+                        }
+                        .same {
+                            font-size: 65px;
+                        }
+                        .btnStart {
+                            width: 81px;
+                            font-size: 20px;
+                        }
+                        .btnStop {
+                            width: 81px;
+                            font-size: 20px;
+                        }
+                        .btnReset {
+                            width: 81px;
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 300px) {
+                        .container {
+                            width: 532px;
+                        }
+                    }
